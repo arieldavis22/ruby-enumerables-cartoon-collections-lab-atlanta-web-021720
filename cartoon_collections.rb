@@ -21,9 +21,5 @@ def find_the_cheese(contains_cheddar)# code an argument here
   #binding.pry
   cheese_types = ["cheddar", "gouda", "camembert"]
 
-  if contains_cheddar.detect {|arr| arr === "cheddar" || "gouda" || "camembert"}
-    return contains_cheddar
-  else
-    return nil
-  end
+  contains_cheddar.any? { |i| cheese_types.include i  }
 end
