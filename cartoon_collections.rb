@@ -22,7 +22,7 @@ def find_the_cheese(contains_cheddar)# code an argument here
   cheese_types = ["cheddar", "gouda", "camembert"]
 
  if contains_cheddar.any? { |i| cheese_types.include? i }
-   return
+   return contains_cheddar
  else
    return nil
  end
